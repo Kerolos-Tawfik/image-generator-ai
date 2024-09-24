@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+header{
+       color: white;
+     
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    margin-bottom: 50px;
+}
+body{
+    height: 100vh;
+}
+
+main{
+   
+  display: flex;
+  flex-direction: column;
+    background-color: #343541;
+    width: 100%;
+    height:100vh ;
+}
+.imgOut{
+    
+   height: 50vh;
+   margin-bottom: 50px;
+   
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.image{
+    width: 500px;
+    border-radius: 5px;
+    border: 1px solid #838393;
+}
+.text{
+    justify-self: center;
+    align-self: center;
+}
+.text button{
+    background-color: #494a54;
+    border:solid 1px #3e3f4a;
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+    margin-left:-35px ;
+    
+}
+.text button:hover{
+    background-color: #343541;
+    border:solid 1px #3e3f4a;
+}
+.text input{
+    background-color:#343541;
+    border: 1px solid #707080;
+    width:300px;
+    outline: none;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+.text input:focus{
+     border: 1px solid #838393;
+}
+footer  {
+    background-color: black;
+    padding: 10px;
+    margin-top: auto;
+    text-align: center;
+    color: white;
+}
+/* #active{
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+
+} */
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    background: linear-gradient(0deg, rgba(255, 61, 0, 0.2) 33%, #ff3d00 100%);
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #263238;
+  }
+  @keyframes rotation {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg)}
+  } 
